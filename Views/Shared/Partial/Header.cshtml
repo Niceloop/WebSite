@@ -1,0 +1,105 @@
+﻿@* Top Nav Bar *@
+<div class="container">
+                    <h1 class="logo">
+                        <a href="~/">
+                            <img alt="Niceloop"  style=""src="~/img/logos/niceloop_logo_big.png">
+                        </a>
+                    </h1>
+                   @* <div class="search">
+                        <form id="searchForm" action="page-search-results.html" method="get">
+                            <div class="input-group">
+                                <input type="text" class="form-control search" name="q" id="q" placeholder="Search...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button"><i class="icon icon-search"></i></button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>*@
+                    <nav>
+                        <ul class="nav nav-pills nav-top">
+                             <li class="phone">
+                                <span>Call Center &nbsp; <i class="icon icon-phone"></i>081 846 0621</span>
+                            </li>
+                            <li>
+                                <a id="register-app"href="http://app.niceloop.com/Account/Register" ><i class="icon icon-angle-right"></i>Register</a>
+                            </li>
+                            <li>
+                                <a id="login-app" href="http://app.niceloop.com/"><i class="icon icon-angle-right"></i>Login</a>
+                            </li>
+                           
+                        </ul>
+                    </nav>
+                    <button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
+                        <i class="icon icon-bars"></i>
+                    </button>
+                </div>
+
+
+@* Main Nav Bar *@
+<div class="navbar-collapse nav-main-collapse collapse">
+    <div class="container">
+        @* Social Networking *@
+       @* <div class="social-icons">
+            <ul class="social-icons">
+                <li class="facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook">Facebook</a></li>
+                <li class="twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter">Twitter</a></li>
+                <li class="linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin">Linkedin</a></li>
+            </ul>
+        </div>*@
+        
+        @* Main Navigation links *@
+        <nav class="nav-main mega-menu">
+            <ul class="nav nav-pills nav-main" id="mainMenu">
+                <li>
+                    <a   href="~/Home">
+                        Home
+                    </a>
+                </li>
+                @* <li>
+                    <a href="~/Features">ความสามารถ</a>
+                </li>*@
+                 <li class="dropdown">
+                    <a class="dropdown-toggle" href="#">
+                        ความสามารถ
+                        <i class="icon icon-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      @*  <li><a href="~/Home/Contact">ติดต่อเรา</a></li>*@
+                        <li><a href="~/Features">Features</a></li>
+                        <li><a href="~/Features/PowerPoint">Power Point</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="~/Price">ราคา</a>
+                </li>
+                <li>
+                    <a href="~/Hardware">อุปกรณ์เสริม</a>
+                </li>
+               
+                
+                <li class="dropdown">
+                    <a class="dropdown-toggle" href="#">
+                        ช่วยเหลือ
+                        <i class="icon icon-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      @*  <li><a href="~/Home/Contact">ติดต่อเรา</a></li>*@
+                        <li><a href="~/Faq">คำถาม</a></li>
+                        <li><a href="~/Help">สอนการใช้งาน</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="~/Home/About">เกี่ยวกับเรา</a>
+                </li>
+                <li>
+                    <a href="~/Home/Contact">ติดต่อเรา</a>
+                </li>
+                  <li>
+                    <a id="demo" href="http://demo.Niceloop.com/Account/LoginDemo" target="_blank">DEMO</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+				</div>
+		

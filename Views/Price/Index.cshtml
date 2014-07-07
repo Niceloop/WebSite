@@ -1,0 +1,299 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+@Html.Action("Breadcrumb", "Home", new { sectionName ="Pricing Tables"})
+
+<div class="container">
+
+    <h2>ราคา <strong>Package</strong></h2>
+    <div class="jumbotron" style="margin-top:40px">
+         
+        <h3 style="text-align: center">สมัครวันนี้ได้รับ Package-890 ฟรี 15 วัน </h3>
+        <h3 style="text-align: center">ไม่มีค่าใช้จ่าย ไม่มีความเสี่ยง</h3>
+       </div>
+    
+
+    <div class="price-head"style="margin: 0px -15px">
+        <div style="width: 40%;">&nbsp;</div>
+        <div style="width: 20%;"><p>฿ 390</p><span>ต่อเดือน</span></div>
+        <div style="width: 20%;"><p>฿ 590</p><span>ต่อเดือน</span></div>
+        <div style="width: 18%;"><p>฿ 890</p><span>ต่อเดือน</span></div>
+    </div>
+
+    @* Table *@
+    <div class="row">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <td class="features-group-title" style=" background-color: white !important;
+                                                            width: 40%;
+                                                            color: black;
+                                                            padding-top: 25px;">ความสามารถหลัก</td>
+                    <td style="width: 20%; padding-left: 10px;"><a class="register-390 btn btn-lg btn-primary" href="http://app.niceloop.com/Account/Register">สมัคร</a></td>
+                    <td style="width: 20%;padding-left: 10px;"><a class="register-590 btn btn-lg btn-primary" href="http://app.niceloop.com/Account/Register">สมัคร</a></td>
+                    <td style="width: 20%;padding-left: 10px;"><a class="register-890 btn btn-lg btn-primary" href="http://app.niceloop.com/Account/Register">สมัคร</a></td>
+                </tr>
+            </thead>
+            @* Core *@
+            <tbody>
+                
+                <tr>
+                    <td>จำนวนรายการอาหาร</td>
+                    <td><i class="icon icon-check"></i></td>
+                    <td><i class="icon icon-check"></i></td>
+                    <td><i class="icon icon-check"></i></td>
+                </tr>
+
+                <tr>
+                    <td>จำนวนโต๊ะที่รองรับ</td>
+                    <td>5 โต๊ะ</td>
+                    <td>30 โต๊ะ</td>
+                    <td>100 โต๊ะ</td>
+                </tr>
+                <tr>
+                    <td>Options ค่าบริการ, ส่วนลด, ภาษี VAT </td>
+                    <td><i class="icon icon-check"></i></td>
+                    <td><i class="icon icon-check"></i></td>
+                    <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                    <td>รองรับ Touch Screen</td>
+                    <td><i class="icon icon-check"></i></td>
+                    <td><i class="icon icon-check"></i></td>
+                    <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                    <td>พิมพ์/ออกแบบ ใบเสร็จ</td>
+                    <td><i class="icon icon-check"></i></td>
+                    <td><i class="icon icon-check"></i></td>
+                    <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                    <td>สร้าง / แก้ไขรายการอาหาร</td>
+                    <td><i class="icon icon-check"></i></td>
+                    <td><i class="icon icon-check"></i></td>
+                    <td><i class="icon icon-check"></i></td>
+                </tr>
+                  <tr>
+                    <td>Offline Mode  <i class="icon icon-info-circle"
+                            data-container="body"
+                                         data-toggle="popover"
+                        data-trigger="hover"
+                            data-placement="right"
+                            data-content="เมื่อ Internet หลุดคุณยังสามารถใช้งานการขายต่อไปได้ ข้อมูลจะถูกเก็บไว้ และจะ Sync กับCloud เมื่ออินเตอร์เน็ทพร้อมใช้อีกครั้ง "
+                            data-original-title=""
+                            title=""></i>
+
+                    </td>
+                    <td></td>
+                    <td><i class="icon icon-check"></i></td>
+                    <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                    <td>ระบบรายจ่าย <i class="icon icon-info-circle"
+                            data-container="body"
+                                                          data-toggle="popover"
+                        data-trigger="hover"
+                            data-placement="right"
+                            data-content="สามารถบันทึกรายจ่ายเบื้องต้นได้ 7 หมวดพื้นฐาน"
+                            data-original-title=""
+                            title=""></i></td>
+                    <td></td>
+                    <td><i class="icon icon-check"></i></td>
+                    <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                    <td>ระบบรายจ่าย ขั้นสูง  <i class="icon icon-info-circle"
+                                                data-container="body"
+                                                data-toggle="popover"
+                                                data-trigger="hover"
+                                                data-placement="right"
+                                                data-content="สามารถสร้างหมวดรายจ่ายเองได้ตามโครงสร้างของร้านคุณเอง"
+                                                data-original-title=""
+                                                title=""></i></td>
+                    <td></td>
+                    <td></td>
+                    <td><i class="icon icon-check"></i></td>
+                </tr>
+                 <tr>
+                    <td>ระบบคลังสินค้า (Inventory)</td>
+                    <td></td>
+                    <td></td>
+                    <td><i class="icon icon-check"></i></td>
+                </tr>
+              
+
+                @* รายงาน *@
+
+
+                <tr>
+                    <td colspan="4" class="features-group-title">Report / รายงาน</td>
+                    
+                </tr>
+                <tr>
+                    <td>รายงาน สรุปยอดขาย รายวัน/สัปดาห์/เดือน</td>
+                    <td><i class="icon icon-check"></i></td>
+                    <td><i class="icon icon-check"></i></td>
+                    <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                    <td>รายงาน ยอดขายแต่ละบิล</td>
+                    <td><i class="icon icon-check"></i></td>
+                    <td><i class="icon icon-check"></i></td>
+                    <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                    <td>รายงาย ยอดขายตามสินค้า</td>
+                    <td><i class="icon icon-check"></i></td>
+                    <td><i class="icon icon-check"></i></td>
+                    <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                    <td>รายงาน ยอดขายตามช่วงเวลา</td>
+                    <td></td>
+                    <td><i class="icon icon-check"></i></td>
+                    <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                    <td>E-Mail Daily Report</td>
+                    <td></td>
+                    <td><i class="icon icon-check"></i></td>
+                    <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                    <td>เปรียบเทียบยอดขายสินค้า(อาหาร) <i class="icon icon-info-circle"
+                            data-container="body"
+                                                          data-toggle="popover"
+                        data-trigger="hover"
+                            data-placement="right"
+                            data-content="เลือกวิเคราะห์ยอดขายแต่ละชนิดได้ตามต้องการ"
+                            data-original-title=""
+                            title=""></i>
+
+                    </td>
+                    <td></td>
+                    <td>สูงสุด 3 ชนิด</td>
+                    <td>สูงสุด 10 ชนิด</td>
+                </tr>
+                <tr>
+                    <td>SMS Daily Report</td>
+                    <td></td>
+                    <td></td>
+                    <td><i class="icon icon-check"></i></td>
+                </tr>
+                <tr>
+                    <td>รายงานสต็อกสินค้า / Inventory</td>
+                    <td></td>
+                    <td></td>
+                    <td><i class="icon icon-check"></i></td>
+                </tr>
+
+                @* การจัดการ *@
+
+
+                <tr>
+                    <td colspan="4" class="features-group-title">การจัดการข้อมูล/ช่วยเหลือ</td>
+                     
+                </tr>
+                <tr>
+                    <td>สร้าง User Account  
+                        <i class="icon icon-info-circle"
+                            data-container="body"
+                           data-toggle="popover"
+                            data-trigger="hover"
+                            data-placement="right"
+                            data-content="สร้าง Username สำหรับใช้ในการ Login เข้าระบบ"
+                            data-original-title=""
+                            title=""></i>
+
+                    </td>
+                    <td></td>
+                    <td>2 Users</td>
+                    <td>5 Users</td>
+                </tr>
+                <tr>
+                    <td>กำหนดสิทธิ์การเข้าถึงข้อมูล</td>
+                    <td></td>
+                    <td><i class="icon icon-check"></i></td>
+                    <td><i class="icon icon-check"></i></td>
+                </tr>
+               
+                <tr>
+                    <td>First Class Support From CEO 
+                        <i class="icon icon-info-circle"
+                            data-container="body"
+                           data-toggle="popover"
+                            data-trigger="hover"
+                            data-placement="right"
+                            data-content="ในกรณีต้องการช่วยเหลือด้านการใช้งาน/เทคนิค คุณจะได้รับความช่วยเหลือเป็นลำดับแรก"
+                            data-original-title=""
+                            title=""></i>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td><i class="icon icon-check"></i></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="price-head"style="margin: 0px -15px">
+        <div style="width: 40%;">&nbsp;</div>
+        <div style="width: 20%;"><p>฿ 390</p><span>ต่อเดือน</span><div class="centered"><a class="register-390 btn btn-lg btn-primary" href="http://app.niceloop.com/Account/Register">สมัคร</a></div></div>
+        <div style="width: 20%;"><p>฿ 590</p><span>ต่อเดือน</span><div class="centered"><a class="register-590 btn btn-lg btn-primary" href="http://app.niceloop.com/Account/Register">สมัคร</a></div></div>
+        <div style="width: 18%;"><p>฿ 890</p><span>ต่อเดือน</span><div class="centered"><a class="register-890 btn btn-lg btn-primary" href="http://app.niceloop.com/Account/Register">สมัคร</a></div></div>
+    </div>
+     
+    
+    <div class="jumbotron" style="margin-top:40px">
+         
+        <h3 style="text-align: center">ไม่แน่ใจ Package ไหนเหมาะกับร้านคุณ ?</h3>
+        <h3 style="text-align: center">โทรเลย <i class="icon icon-phone"></i> 081-846-0621</h3>
+       </div>
+</div>
+
+<hr/>
+
+<div class="container">
+    <div class="row faq-niceloop">
+        <div class="col-md-9">
+            @Html.Partial("Faq-Partial/GeneralQuestion")
+        </div>
+        <div class="col-md-3">
+            
+        </div>
+    </div>
+</div>
+
+ @Html.Partial("Faq-Partial/ReadMoreFaq")
+
+@section scripts
+{
+    
+    <script>
+
+       
+        
+        $(document).ready(function () {
+
+            //set active tab
+            var activeTab = 4;
+            $('#mainMenu li:eq(' + activeTab + ')').addClass('active');
+
+            $('i').popover();
+             
+            // set icons
+            $('p.question').prepend('<i class="icon icon-question"></i> ');
+            $('p.answer').prepend('<i class="icon icon-comment-o"></i> ');
+
+            $('span.myFaq').popover();
+
+        })
+    </script>
+}
+
+
+<style>
+    
+    
+</style>

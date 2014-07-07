@@ -1,0 +1,26 @@
+﻿ @Html.Action("Breadcrumb", "Home", new { sectionName = "SlideShow" })
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Niceloop.com ทำอะไรได้บ้าง</h3>
+            <p>คลิกปุ่มขยาย(ด้านมุมล่างขวา) เพื่อดู Full Screen</p>
+            <iframe src="http://www.slideshare.net/slideshow/embed_code/33732775" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/ricewarit/version2-33732775" title="Niceloop Featues PowerPoint" target="_blank">Niceloop Featues PowerPoint</a> </strong> from <strong><a href="http://www.slideshare.net/ricewarit" target="_blank">Warit Tantivirasut</a></strong> </div>        </div>
+        <a href="http://www.niceloop.com/Sample/Version2.pdf" target="_blank" style="color: blue; margin-top: 50px;"><i class="fa fa-files-o"></i> <h4>DownLoad PDF ต้นฉบับเพื่อความคมชัด (4MB)</h4></a>
+    </div></div>
+
+
+
+
+@section scripts
+{
+
+    <script>    
+
+        $(document).ready(function() {
+            var activeTab = 1;
+            $('#mainMenu li:eq(' + activeTab + ')').addClass('active');
+
+        })
+    </script>
+}

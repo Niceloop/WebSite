@@ -1,0 +1,106 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+@Html.Action("Breadcrumb", "Home", new { sectionName = "FAQ" })
+
+<div class="container">
+    <h2>คำถาม-คำตอบ <strong>FAQ</strong></h2>
+    <div class="row">
+        <div class="col-md-9">
+            <p class="lead">
+                หากมีคำถามอื่นๆ หรือข้อสงสัย กรุณาสอบถามทาง Email: info@niceloop.com หรือ โทร 081-846-0621 ทางเราพร้อมจะตอบคำถามทันที
+            </p>
+        </div>
+        <div class="col-md-2 col-md-offset-1">
+            <a href="#" class="btn btn-lg btn-primary push-top pull-right">ติดต่อ <i class="icon icon-phone"></i>081 846 6021</a>
+        </div>
+    </div>
+    <hr>
+</div>
+<div class="container min-hight margin-bottom-40">
+    <div class="row">
+        <div class="col-md-3" id="question-nav">
+            <div id="affix" class="affix-top">
+                <ul class="ver-inline-menu tabbable margin-bottom-10">
+                    <li>
+                        <a data-toggle="tab" href="#general">คำถาม ทั่วไป
+                        </a>
+
+                    </li>
+                    <li class=""><a href="#technical">คำถาม ด้านการใช้งาน/เทคนิค</a></li>
+                    <li class=""><a href="#payment">คำถาม การจ่ายเงิน</a></li>
+                    <li class=""><a href="#hardware">คำถาม Hardware</a></li>
+                    <li class=""><a href="#security">คำถาม ความปลอดภัย</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="col-md-9 faq-niceloop">
+           
+            @* For template *@
+          @*     <p class="question">qqqqqqqqqqqq</p>
+                <p class="answer">aaaaaaaaa</p>*@
+
+               
+            @Html.Partial("Faq-Partial/GeneralQuestion")
+                
+                @Html.Partial("Faq-Partial/TechnicalQuestion")
+                
+                @Html.Partial("Faq-Partial/PackageQuestion")
+               
+               @Html.Partial("Faq-Partial/PaymentQuestion")
+                 
+             @Html.Partial("Faq-Partial/Hardware")
+
+            @Html.Partial("Faq-Partial/Security")
+           
+            
+            
+
+      
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+@section scripts{
+
+    <script>
+
+        $(document).ready(function () {
+
+            //set active tab
+            //var activeTab = 5;
+            //$('#mainMenu li:eq(' + activeTab + ')').addClass('active');
+
+
+            // set icons
+            $('p.question').prepend('<i class="icon icon-question"></i> ');
+            $('p.answer').prepend('<i class="icon icon-comment-o"></i> ');
+
+            $('span.myFaq').popover();
+            // $('#affix').affix();
+        });
+
+
+        // Simple jQuery scroll to anchor up or down the page
+        $('#question-nav li a').click(function () {
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top - 100
+            }, 'slow');
+            return false;
+        });
+
+
+
+    </script>
+
+  
+
+}

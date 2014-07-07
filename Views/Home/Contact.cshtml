@@ -1,0 +1,168 @@
+﻿
+@if(ViewBag.Message != null)
+{
+    <text>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 style="color: blue"> @ViewBag.Message </h2>
+                </div>
+            </div>
+        </div>
+
+    </text>
+    
+} 
+
+
+@Html.Action("Breadcrumb", "Home", new { sectionName ="Contact Us"})
+ 
+<!-- Google Maps -->
+				<div id="googlemaps" class="google-map hidden-xs"></div>
+
+				<div class="container">
+
+					<div class="row">
+						<div class="col-md-6">
+
+							<div class="alert alert-success hidden" id="contactSuccess">
+								<strong>Success!</strong> Your message has been sent to us.
+							</div>
+
+							<div class="alert alert-error hidden" id="contactError">
+								<strong>Error!</strong> There was an error sending your message.
+							</div>
+
+							<h2 class="short">ติดต่อเรา </h2>
+							<form   action="/Home/Contact" id="contactForm" method="POST">
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-md-6">
+                                            <label>ชื่อ*</label>
+                                            <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label>อีเมล์ *</label>
+                                            <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+									<div class="form-group">
+										<div class="col-md-12">
+											<label>เบอร์ติดต่อกลับ</label>
+											<input type="text" value="" data-msg-required="Please enter your contact number." maxlength="100" class="form-control" name="phone" id="phone">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group">
+										<div class="col-md-12">
+											<label>หัวข้อ</label>
+											<input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" id="subject">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group">
+										<div class="col-md-12">
+											<label>ข้อความ *</label>
+											<textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" id="message"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<input type="submit" value="Send Message" class="btn btn-primary btn-lg" data-loading-text="Loading...">
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="col-md-6">
+
+							<h4 class="push-top">จาก CEO</h4>
+                            <p>Niceloop.com ขอขอบคุณที่ให้ความสนใจในผลิตภัณฑ์ของเรา 
+                                <br/>เราหวังเป็นอย่างยิ่งที่จะได้ให้บริการคุณ และ พัฒนาผลิตภัณฑ์ให้ดียิ่งขึ้นต่อไป</p>
+
+							<hr />
+
+							<h4>บริษัท ไนซ์ลูป จำกัด</h4>
+                            <ul class="list-unstyled">
+                                <li><i class="icon icon-map-marker"></i> <strong>ที่อยุ่ :</strong> 106 ม.7 ถ.ถนนราษฎร์บำรุง บางคูวัด ปทุมธานี 12000</li>
+                                <br/>
+                                <li><i class="icon icon-map-marker"></i> <strong>เลขที่บริษัท/เลขผู้เสียภาษี :</strong> 0135557000061</li>
+
+                                <br/>
+                                <li><i class="icon icon-envelope"></i> <strong>Email:</strong> <a href="mailto:info@niceloop.com">info@niceloop.com</a></li>
+                                <br/>
+                                <li><i class="icon icon-phone"></i> <strong>Call Center:</strong> 081 846 0621</li>
+                                @*                                <li><i class="icon icon-phone"></i> <strong>Sales</strong> (123) 456-7890</li>
+                                <li><i class="icon icon-phone"></i> <strong>Sales</strong> (123) 456-7890</li>
+                                <li><i class="icon icon-phone"></i> <strong>ร้องเรียน :</strong> 081 846 0621</li>*@
+                               
+                            </ul>
+
+
+							<hr />
+
+							<h4>เวลาทำการ</h4>
+							<ul class="list-unstyled">
+								<li><i class="icon icon-time"></i> จันทร์ - ศุกร์ : 9.00 ถึง 18.00 น.</li>
+								<li><i class="icon icon-time"></i> เสาร์ - อาทิตย์ :  ปิด</li>
+ 							</ul>
+                            <p>สำหรับลูกค้าแพ็คเกจ 890 สามารถติดต่อตรงถึง CEO ได้ตลอด 24 ชม. <br/>ตามเบอร์ที่ให้กับลูกค้าไว้</p>
+						</div>
+
+					</div>
+
+				</div>
+
+
+
+@section scripts
+{
+ 
+     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+        
+        $(document).ready(function () {
+            //set active tab
+            var activeTab = 10;
+            $('#mainMenu li:eq(' + activeTab + ')').addClass('active');
+
+            //13.951061,100.509764
+            var initLatitude = 13.951061;
+            var initLongitude = 100.509764;
+
+            function initialize() {
+                var myLatlng = new google.maps.LatLng(initLatitude, initLongitude);
+                var mapOptions = {
+                    zoom: 10,
+                    center: new google.maps.LatLng(13.850071, 100.516448),
+                    scrollwheel: false,
+                };
+                var map = new google.maps.Map(document.getElementById('googlemaps'), mapOptions);
+
+                var marker = new google.maps.Marker({
+                    position: myLatlng,
+                    map: map,
+                    title: 'Hello World!',
+                    address: "asdf",
+                    html: "<strong>New York Office</strong><br>New York, NY 10017"
+                });
+            }
+
+         
+            google.maps.event.addDomListener(window, 'load', initialize);
+
+        });
+        
+     
+    </script>
+    
+    
+    <script>
+        
+    </script>
+}
