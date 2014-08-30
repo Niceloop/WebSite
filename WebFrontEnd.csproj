@@ -712,6 +712,7 @@
     <Content Include="Views\Shared\Faq-Partial\ReadMoreFaq.cshtml" />
     <Content Include="Views\Shared\Bank\Banks.cshtml" />
     <Content Include="Views\Features\PowerPoint.cshtml" />
+    <Content Include="Thermal_Printer_Driver_LAN.zip" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
