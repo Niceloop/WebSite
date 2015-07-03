@@ -367,6 +367,7 @@
     <Content Include="NiceloopPrinterInterface.zip" />
     <Content Include="XPrinterDriver.exe" />
     <Content Include="FromCD.zip" />
+    <Content Include="printer_tools.zip" />
     <None Include="Properties\PublishProfiles\AWS www.pubxml" />
     <Content Include="PrinterInterface.exe" />
     <Content Include="Sample\A4_Report_Items.pdf" />
