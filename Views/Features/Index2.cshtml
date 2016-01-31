@@ -1,0 +1,130 @@
+﻿@{
+    ViewBag.Title = "Features";
+}
+@* TODO : Stock pic & expense pic *@
+
+
+@*<section class="page-top custom-product">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">บริหารร้านอาหาร .... <strong style="font-size: 1.3em">ง่ายมาก</strong></h1>
+                <p class="lead text-center" style="margin-top: 30px">ยอดขาย ค่าใช้จ่าย สต็อกสินค้า อาหารขายดี <br/>เพียงแค่คลิก.. ก็รู้ทันที</p>
+            
+                <div class="centered center center-block">
+                                    <a href="http://app.niceloop.com/Account/Register" class="center btn btn-default btn-lg push-bottom">ทดลอง<strong>ฟรี</strong>วันนี้</a> <span class="arrow hl" style="top: 10px;"></span>
+
+                </div>
+            </div>
+         
+        </div>
+    </div>
+</section>*@
+
+<section class="page-top custom-product">
+    <div class="container" style="margin-bottom: 35px">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">ยอดขาย ค่าใช้จ่าย สต็อกสินค้า อาหารขายดี  <br/><br/>เพียงแค่คลิก.. ก็รู้ทันที  <a  style="margin-left: 20px" href="http://app.niceloop.com/Account/Register" class="center btn btn-default btn-lg  ">ทดลอง<strong>ฟรี</strong>วันนี้</a> <span class="arrow hl" style="top: 25px;"></span>
+</h1>
+                
+               
+            </div>
+            @*   <div class="col-md-5">
+                <img class="pull-right responsive hidden-xs" alt="" 
+                    style="top: 0px;
+                            position: relative;
+                            height: 270px;" src="~/img/features/screen-with-device/dashboard-macbook-direct.png">
+            </div>*@
+        </div>
+    </div>
+</section>
+
+
+
+
+@Html.Partial("Partial/List-Features")
+
+
+<hr class="tall" />
+
+@Html.Partial("Partial/ScreenShot")
+
+@*<section class="call-to-action featured footer">
+				<div class="container">
+					<div class="row">
+                        <div class="center">
+                            <h2>
+                                <i  style="font-size: 20px;
+                                                                                   position: relative;
+                                                                                   color:#666;
+                                top: -20px;"class="icon icon-quote-left"></i> 
+                                10 ปากว่าไม่เท่าตาเห็น,  10 ตาเห็นไม่เท่าได้ <strong>สัมผัส</strong> 
+                                <i class="icon icon-quote-right" style="font-size: 20px;color:#666;position: relative;top: -20px;"></i>
+                            </h2>
+
+                             <h3><a href="http://demo.Niceloop.com/Account/LoginDemo" target="_blank" class="btn btn-lg btn-primary appear-animation bounceIn appear-animation-visible" data-appear-animation="bounceIn">ทดสอบ DEMO Online พร้อมข้อมูลตัวอย่างก่อนการตัดสินใจ ที่นี่</a><span class="arrow hl" data-appear-animation="rotateInDownLeft" style="top: 40px;"></span></h3>
+                        </div>
+					</div>
+				</div>
+			</section>*@
+
+@section scripts
+{
+    <script src="~/Scripts/jquery.bxslider.min.js"></script>
+    
+    <!-- Add fancyBox -->
+    <link href="~/Content/jquery.fancybox.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery.fancybox.js"></script>
+    <script>
+        
+        $(document).ready(function () {
+            
+            // tab
+            var activeTab = 1;
+            $('#mainMenu li:eq(' + activeTab + ')').addClass('active');
+
+            $('.bxslider').bxSlider({
+                
+             
+                infiniteLoop: false,
+                hideControlOnEnd: true
+            });
+            
+            //screenshots
+            $('#screenShot').bxSlider({
+                minSlides: 3,
+                maxSlides: 3,
+                slideWidth: 400,
+                slideMargin: 10,
+                captions: true
+            });
+
+            
+            $(".fancybox").fancybox({
+                openEffect: 'none',
+                closeEffect: 'none'
+            });
+         
+            $(".fancy-thumb").fancybox({
+                prevEffect: 'none',
+                nextEffect: 'none',
+                helpers: {
+                    title: {
+                        type: 'inside'
+                    },
+                    thumbs: {
+                        width: 50,
+                        height: 50
+                    }
+                }
+            });
+
+        })
+      
+    </script>
+    
+    <link href="~/css/jquery.bxslider.css" rel="stylesheet" />
+}
+
+ 

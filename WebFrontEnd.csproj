@@ -272,8 +272,25 @@
     <Content Include="css\fonts\font-awesome\fonts\FontAwesome.otf" />
     <Content Include="img\bx_loader.gif" />
     <Content Include="img\controls.png" />
+    <Content Include="img\customer-logo\3วัน2คืน.jpg" />
+    <Content Include="img\customer-logo\cocotam.jpg" />
+    <Content Include="img\customer-logo\duckbar.png" />
+    <Content Include="img\customer-logo\Fakeclub.jpg" />
+    <Content Include="img\customer-logo\ffliccliff.jpg" />
+    <Content Include="img\customer-logo\jq delivery.jpg" />
+    <Content Include="img\customer-logo\loyshy2.jpg" />
+    <Content Include="img\customer-logo\morrrning.jpg" />
+    <Content Include="img\customer-logo\noddle.jpg" />
+    <Content Include="img\customer-logo\ScalaDinner.jpg" />
+    <Content Include="img\customer-logo\Shabuku.jpg" />
+    <Content Include="img\customer-logo\shabuku-2.png" />
+    <Content Include="img\customer-logo\พุงกางชาบู.jpg" />
+    <Content Include="img\customer-logo\สถานนีบ้านนม.jpg" />
+    <Content Include="img\features\1390.jpg" />
     <Content Include="img\features\expense.jpg" />
     <Content Include="img\features\expense2.jpg" />
+    <Content Include="img\features\flow.jpg" />
+    <Content Include="img\features\hardware_assembly_full.jpg" />
     <Content Include="img\features\inventory-bar-check.jpg" />
     <Content Include="img\features\inventory-woman.jpg" />
     <Content Include="img\features\inventory123.png" />
@@ -715,6 +732,9 @@
     <Content Include="Views\Shared\Bank\Banks.cshtml" />
     <Content Include="Views\Features\PowerPoint.cshtml" />
     <Content Include="Thermal_Printer_Driver_LAN.zip" />
+    <Content Include="Views\Home\Index2.cshtml" />
+    <Content Include="Views\Features\Partial\List-Feature-Old.cshtml" />
+    <Content Include="Views\Features\Index2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
