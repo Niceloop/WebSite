@@ -21,110 +21,146 @@
 <!-- Google Maps -->
 				<div id="googlemaps" class="google-map hidden-xs"></div>
 
-				<div class="container">
+<div class="container">
 
-					<div class="row">
-						<div class="col-md-6">
+    <div class="row">
+        <div class="col-md-6">
 
-							<div class="alert alert-success hidden" id="contactSuccess">
-								<strong>Success!</strong> Your message has been sent to us.
-							</div>
+            <div class="alert alert-success hidden" id="contactSuccess">
+                <strong>Success!</strong> Your message has been sent to us.
+            </div>
 
-							<div class="alert alert-error hidden" id="contactError">
-								<strong>Error!</strong> There was an error sending your message.
-							</div>
+            <div class="alert alert-error hidden" id="contactError">
+                <strong>Error!</strong> There was an error sending your message.
+            </div>
 
-							<h2 class="short">ติดต่อเรา </h2>
-							<form   action="/Home/Contact" id="contactForm" method="POST">
-                                <div class="row">
-                                    <div class="form-group">
-                                        <div class="col-md-6">
-                                            <label>ชื่อ*</label>
-                                            <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label>อีเมล์ *</label>
-                                            <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-									<div class="form-group">
-										<div class="col-md-12">
-											<label>เบอร์ติดต่อกลับ</label>
-											<input type="text" value="" data-msg-required="Please enter your contact number." maxlength="100" class="form-control" name="phone" id="phone">
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="form-group">
-										<div class="col-md-12">
-											<label>หัวข้อ</label>
-											<input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" id="subject">
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="form-group">
-										<div class="col-md-12">
-											<label>ข้อความ *</label>
-											<textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" id="message"></textarea>
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<input type="submit" value="Send Message" class="btn btn-primary btn-lg" data-loading-text="Loading...">
-									</div>
-								</div>
-							</form>
-						</div>
-						<div class="col-md-6">
+            <h2 class="short">ติดต่อเรา </h2>
+            <form   action="/Home/Contact" id="contactForm" method="POST">
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-md-6">
+                            <label>ชื่อ*</label>
+                            <input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name">
+                        </div>
+                        <div class="col-md-6">
+                            <label>อีเมล์*</label>
+                            <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label>เบอร์ติดต่อกลับ*</label>
+                            <input type="text" value="" data-msg-required="Please enter your contact number." maxlength="100" class="form-control" name="phone" id="phone">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label>หัวข้อ</label>
+                            <input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" id="subject">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label>ข้อความ *</label>
+                            <textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" id="message"></textarea>
+                        </div>
+                    </div>
+                </div>
+                @*<div class="row">
+							        <div class="form-group">
+							            <div class="col-md-12">
+							                <div class="g-recaptcha"  data-callback="correctCaptcha" data-sitekey="6LdKxy8UAAAAAGgrw9x45OPnW-qX7TAvp4c1KoBp"></div>							            </div>
+							        </div>
+							    </div>*@
+                <div class="row">
+                    <div class="col-md-12">
+                        <input  id="submit-message" type="submit"     value="Send Message" class="btn btn-primary btn-lg" data-loading-text="Loading...">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6">
 
-							@*<h4 class="push-top">จาก CEO</h4>
+            @*<h4 class="push-top">จาก CEO</h4>
                             <p>Niceloop.com ขอขอบคุณที่ให้ความสนใจในผลิตภัณฑ์ของเรา 
                                 <br/>เราหวังเป็นอย่างยิ่งที่จะได้ให้บริการคุณ และ พัฒนาผลิตภัณฑ์ให้ดียิ่งขึ้นต่อไป</p>
 
 							<hr />*@
-                            <br/>
-                            <br/>
-                            <br/>
-							<h4>บริษัท ไนซ์ลูป จำกัด</h4>
-                            <ul class="list-unstyled">
-                                <li><i class="icon icon-map-marker"></i> <strong>ที่อยุ่ :</strong> 106 ม.7 ถ.ถนนราษฎร์บำรุง บางคูวัด ปทุมธานี 12000</li>
-                                <br/>
-                                <li><i class="icon icon-map-marker"></i> <strong>เลขที่บริษัท/เลขผู้เสียภาษี :</strong> 0135557000061</li>
+            <br/>
+            <br/>
+            <br/>
+            <h4>บริษัท ไนซ์ลูป จำกัด</h4>
+            <ul class="list-unstyled">
+						        
+                @*<li><i class="icon icon-map-marker"></i> 
+						            <strong>ที่อยุ่ :</strong> 106 ม.7 ถ.ถนนราษฎร์บำรุง บางคูวัด ปทุมธานี 12000</li>*@
+                                
+                <li><i class="icon icon-map-marker"></i> 
+                    <strong>ที่อยุ่ :</strong> 41/7 ซ.สวรรค์วิถี ถ.สุทธิสารตอนปลาย เขตห้วยขวาง กทม 10310</li>
 
-                                <br/>
-                                <li><i class="icon icon-envelope"></i> <strong>Email :</strong> <a href="mailto:info@niceloop.com">info@niceloop.com</a></li>
-                                <br/>
-                                <li><i class="icon icon-phone"></i> <strong>สอบถาม :</strong> 088-460-6656</li>
-                                <li><i class="icon icon-phone"></i> <strong>ช่วยเหลือด้านการใช้งาน  (Support) :</strong> 084-333-7907, 081-846-0621 (สำรอง)</li>
-                                  <li><i class="icon icon-phone"></i> <strong>แจ้งโอนเงิน / จัดซื้อ :</strong> 081-846-0621</li>
+                <br/>
+                <li><i class="icon icon-map-marker"></i> <strong>เลขที่บริษัท/เลขผู้เสียภาษี :</strong> 0135557000061</li>
 
-                           
-                            </ul>
+                <br/>
+                <li><i class="icon icon-envelope"></i> <strong>Email :</strong> <a href="mailto:info@niceloop.com">info@niceloop.com</a></li>
+                <br/>
+                @*<li><i class="icon icon-phone"></i> <strong>สอบถาม :</strong> 088-460-6656</li>
+						        <li><i class="icon icon-phone"></i> <strong>ช่วยเหลือด้านการใช้งาน (Support) :</strong> 084-333-7907, 081-846-0621 (สำรอง)</li>
+						        <li><i class="icon icon-phone"></i> <strong>แจ้งโอนเงิน / จัดซื้อ :</strong> 081-846-0621</li>*@
 
 
-							<hr />
+            </ul>
 
-							<h4>เวลาทำการ</h4>
-							<ul class="list-unstyled">
-								<li><i class="icon icon-time"></i> จันทร์ - ศุกร์ : 9.00 ถึง 18.00 น.</li>
-								<li><i class="icon icon-time"></i> เสาร์ - อาทิตย์ :  ปิด</li>
- 							</ul>
+                            
+            <table class="table" style="width: 75%; color :black">
+                <thead>
+                <tr>
+                    <th >ติดต่อสอบถามข้อมูลได้ที่  <span style="font-size: 20px; color: blue; font-weight: bold">02-038-5600</span></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>ฝ่ายขาย</td>
+                    <td>กด 1</td>
+                </tr>
+                <tr>
+                    <td>ฝ่าย IT Support / แจ้งปัญหา</td>
+                    <td>กด 2</td>
+                </tr>
+                <tr>
+                    <td>ฝ่ายการเงิน / แจ้งเติมวัน / จัดซื้อ</td>
+                    <td>กด 3</td>
+                </tr>
+                </tbody>
+            </table>
+                            
+
+            <hr />
+
+            <h4>เวลาทำการ</h4>
+            <ul class="list-unstyled">
+                <li><i class="icon icon-time"></i> จันทร์ - ศุกร์ : 9.00 ถึง 18.00 น.</li>
+                <li><i class="icon icon-time"></i> เสาร์ - อาทิตย์ :  ปิด</li>
+            </ul>
                         
-						</div>
+        </div>
 
-					</div>
+    </div>
 
-				</div>
+</div>
+
 
 
 
 @section scripts
 {
- 
+    <script src='https://www.google.com/recaptcha/api.js'></script>
      <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script>
         
@@ -133,9 +169,13 @@
             var activeTab = 5;
             $('#mainMenu li:eq(' + activeTab + ')').addClass('active');
 
-            //13.951061,100.509764
-            var initLatitude = 13.951061;
-            var initLongitude = 100.509764;
+            //13.951061,100.509764  RES factory
+            //var initLatitude = 13.951061;
+            //var initLongitude = 100.509764;
+
+
+            var initLatitude = 13.7904324;
+            var initLongitude = 100.5885087;
 
             function initialize() {
                 var myLatlng = new google.maps.LatLng(initLatitude, initLongitude);
@@ -159,8 +199,24 @@
             google.maps.event.addDomListener(window, 'load', initialize);
 
         });
-        
-     
+
+
+        //callback from image in html
+        var correctCaptcha = function(response) {
+            //alert(response);
+            $('#submit-message').prop("disabled", false);
+
+            $('#submit-message').click (function() {
+                $('#submit-message').prop("disabled", true);
+
+
+                setTimeout(function() {
+                        $('#submit-message').prop("disabled", false);
+
+                    },
+                    1500);
+            });
+        };
     </script>
     
     

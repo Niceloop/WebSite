@@ -26,6 +26,7 @@
     <SccProvider>SAK</SccProvider>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -387,10 +388,13 @@
     <Content Include="img\hardware\usb-aircard.psd" />
     <Content Include="img\hardware\usb-aircard2.psd" />
     <Content Include="NiceloopPrinterInterface.zip" />
+    <Content Include="teamviewerqs.exe" />
+    <Content Include="TeamViewer_Setup_th.exe" />
     <Content Include="XPrinterDriver.exe" />
     <Content Include="FromCD.zip" />
-    <Content Include="printer_tools.zip" />
+    <Content Include="printer_tools_backup.zip" />
     <Content Include="android.apk" />
+    <Content Include="printer_driver.zip" />
     <None Include="Properties\PublishProfiles\AWS www.pubxml">
       <SubType>Designer</SubType>
     </None>
